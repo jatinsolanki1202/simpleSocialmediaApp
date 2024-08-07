@@ -156,5 +156,5 @@ app.get("/remove/profilepic", isLoggedIn, async (req, res) => {
     res.redirect("/profile");
 })
 
-const PORT = 3000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => console.log(`server running on port ${PORT}`));
