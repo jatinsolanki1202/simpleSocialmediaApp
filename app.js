@@ -8,7 +8,7 @@ const cookieParser = require('cookie-parser');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
-const multercongig = require('./config/multerConfig')
+const multerconfig = require('./config/multerConfig')
 const dotenv = require('dotenv')
 
 dotenv.config();
@@ -136,7 +136,7 @@ app.get("/upload/profilepic", isLoggedIn, (req, res) => {
     res.render("profilePic");
 })
 
-app.post("/upload", isLoggedIn, multercongig.single("profilePic"), async (req, res) => {
+app.post("/upload", isLoggedIn, multerconfig.single("profilePic"), async (req, res) => {
     let user = await usermodel.findOne({ email: req.user.email });
 
     user.profilePic = req.file.filename;
