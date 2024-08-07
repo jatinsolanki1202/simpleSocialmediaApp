@@ -1,7 +1,7 @@
- @media (max-width:640px) {
+ @media (max-width:480px) {
      .form-container {
          /* width: 100% !important; */
-         padding: 10px !important;
+         padding: 25px !important;
      }
 
      .main {
