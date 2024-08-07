@@ -1,6 +1,17 @@
  @media (max-width:480px) {
      .form-container {
-         /* width: 100% !important; */
+         width: 90% !important;
+         padding: 25px !important;
+     }
+
+     .main {
+         padding: 10px !important;
+     }
+ }
+
+ @media (max-width:635px) {
+     .form-container {
+         width: 90% !important;
          padding: 25px !important;
      }
 
