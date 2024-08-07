@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/login.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="min-h-screen w-full bg-zinc-900 text-white p-10 flex flex-col items-center justify-center"
+    >
+      <div
+        class="form-container flex flex-col justify-center items-center bg-zinc-300 p-7 shadow shadow-blue-500/50 rounded-lg w-1/4 text-black"
+      >
+        <h1 class="text-3xl mb-5 font-semibold">Create Account</h1>
+        <form
+          action="/register"
+          method="post"
+          class="flex flex-col justify-center items-center w-full"
+        >
+          <input
+            class="w-full px-5 py-2 outline-none mb-4 bg-transparent border-2 border-zinc-400 rounded-lg"
+            type="text"
+            name="name"
+            placeholder="Name"
+            required
+          />
+          <input
+            class="w-full px-5 py-2 outline-none mb-4 bg-transparent border-2 border-zinc-400 rounded-lg"
+            type="text"
+            name="username"
+            placeholder="username"
+            required
+          />
+          <input
+            class="w-full px-5 py-2 outline-none mb-4 bg-transparent border-2 border-zinc-400 rounded-lg"
+            type="text"
+            name="email"
+            placeholder="email"
+            required
+          />
+          <input
+            class="w-full px-5 py-2 outline-none mb-4 bg-transparent border-2 border-zinc-400 rounded-lg"
+            type="number"
+            name="age"
+            placeholder="age"
+            required
+          />
+          <input
+            class="w-full px-5 py-2 outline-none mb-4 bg-transparent border-2 border-zinc-400 rounded-lg"
+            type="password"
+            name="password"
+            placeholder="password"
+            required
+          />
+          <input
+            class="w-full px-5 py-2 outline-none mb-4 bg-blue-500 rounded-lg text-white cursor-pointer"
+            type="submit"
+          />
+          <h5>Already registered? <a href="/login">Login here</a></h5>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
